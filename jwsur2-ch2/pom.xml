@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>name.abhijitsarkar.webservices</groupId>
+		<artifactId>jwsur2</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jwsur2-ch2</artifactId>
+	<packaging>war</packaging>
+	<name>jwsur2-ch2</name>
+	<description>
+    Java Web Services: Up and Running, 2e, ISBN-10: 1449365116, ISBN-13: 978-1449365110, chapter 2, modified practice code
+    Original code can be found here: https://github.com/mkalin/jwsur2
+    
+    <![CDATA[
+    To run, navigate to 'jwsur-ch2', run 'mvn clean package jetty:run' and then 
+    	hit 'http://localhost:8080/jwsur2-ch2' from the browser or from curl if you're on Linux.
+    	
+    	The following URLS relative to the context root are supported (see the test cases):
+    	 - json
+    	 - plain
+    	 - adages
+    	 - adages/json
+    	 - adages/plain
+    	 
+    	To start Jetty in debug mode, run 'mvn clean package jetty:run-forked'.
+    ]]>
+  </description>
+
+	<dependencies>
+		<!-- This automagically registers a JSON Provider with Jersey -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+		</dependency>
+		<!-- jersey-server depedency must be present for jersey-test-framework 
+			to work -->
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-server</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.test-framework.providers</groupId>
+			<artifactId>jersey-test-framework-provider-jdk-http</artifactId>
+		</dependency>
+		<!-- This must be after Jersey else throws weird exception at runtime -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+		</dependency>
+	</dependencies>
+</project>
