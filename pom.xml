@@ -8,7 +8,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>jwsur2</name>
-	<description>This project is intended to manage the dependencies and plugins for Web Services practice code</description>
+	<description>
+    This project is intended to manage the dependencies and plugins for Web Services practice code.
+    Run 'mvn clean install' on this project before running individual projects.
+  </description>
 
 	<properties>
 		<project.build.sourceLevel>1.7</project.build.sourceLevel>

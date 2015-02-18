@@ -1,15 +1,16 @@
-
 package com.github.mkalin.jwsur2.ch4.rand.client.async.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for nextN complex type.
+ * <p>
+ * Java class for nextN complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="nextN">
@@ -26,9 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "nextN", propOrder = {
-    "arg0"
-})
+@XmlType(name = "nextN", propOrder = { "arg0" })
 public class NextN {
 
     protected int arg0;
@@ -38,7 +37,7 @@ public class NextN {
      * 
      */
     public int getArg0() {
-        return arg0;
+	return arg0;
     }
 
     /**
@@ -46,7 +45,7 @@ public class NextN {
      * 
      */
     public void setArg0(int value) {
-        this.arg0 = value;
+	this.arg0 = value;
     }
 
 }

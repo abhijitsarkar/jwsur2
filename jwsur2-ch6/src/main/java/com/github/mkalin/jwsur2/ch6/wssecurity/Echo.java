@@ -7,8 +7,8 @@ import javax.jws.WebService;
 @WebService
 @HandlerChain(file = "jaxws-handler-chains-echo.xml")
 public class Echo {
-	@WebMethod
-	public String echo(String msg) {
-		return "Echoing: " + msg;
-	}
+    @WebMethod
+    public String echo(String msg) {
+	return "Echoing: " + msg;
+    }
 }

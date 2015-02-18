@@ -13,10 +13,10 @@
     Original code can be found here: https://github.com/mkalin/jwsur2
     
     <![CDATA[
-	To generate JAX-WS clients, navigate to 'jwsur-ch5', run 'mvn clean generate-sources -P wsimport'
-    To run, navigate to 'jwsur-ch5', run 'mvn clean package jetty:run'. Then run the main classes in the project.
+	    To generate JAX-WS clients, navigate to 'jwsur-ch5', run 'mvn clean generate-sources -P wsimport'
+      To run, navigate to 'jwsur-ch5', run 'mvn clean package jetty:run'. Then run the main classes in the project.
     	
-    To start Jetty in debug mode, run 'mvn clean package jetty:run-forked'.
+      To start Jetty in debug mode, run 'mvn clean package jetty:run-forked'.
     ]]>
   </description>
 

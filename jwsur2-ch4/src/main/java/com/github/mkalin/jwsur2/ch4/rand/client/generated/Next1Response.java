@@ -1,4 +1,3 @@
-
 package com.github.mkalin.jwsur2.ch4.rand.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,11 +5,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for next1Response complex type.
+ * <p>
+ * Java class for next1Response complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="next1Response">
@@ -27,9 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "next1Response", propOrder = {
-    "_return"
-})
+@XmlType(name = "next1Response", propOrder = { "_return" })
 public class Next1Response {
 
     @XmlElement(name = "return")
@@ -40,7 +39,7 @@ public class Next1Response {
      * 
      */
     public int getReturn() {
-        return _return;
+	return _return;
     }
 
     /**
@@ -48,7 +47,7 @@ public class Next1Response {
      * 
      */
     public void setReturn(int value) {
-        this._return = value;
+	this._return = value;
     }
 
 }

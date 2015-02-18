@@ -12,32 +12,32 @@ import com.sun.xml.wss.impl.callback.UsernameCallback;
 // would be removed.
 public class Prompter implements CallbackHandler {
 
-	// Prompt for and read the username and the password.
-	public void handle(Callback[] callbacks) {
-		try {
-			for (int i = 0; i < callbacks.length; i++) {
-				if (callbacks[i] instanceof UsernameCallback) {
-					UsernameCallback cb = (UsernameCallback) callbacks[i];
-					/*
-					 * Disable for testing. System.out.print("Username: ");
-					 * String username = readLine();
-					 */
-					String username = "fred"; // hard-wire for testing
-					if (username != null)
-						cb.setUsername(username);
-				} else if (callbacks[i] instanceof PasswordCallback) {
-					PasswordCallback cb = (PasswordCallback) callbacks[i];
-					/*
-					 * Disable for testing System.out.print("Password: ");
-					 * String password = readLine();
-					 */
-					String password = "rockbed"; // hard-wire for testing
-					if (password != null)
-						cb.setPassword(password);
-				}
-			}
-		} catch (Exception e) {
-			throw new RuntimeException(e);
+    // Prompt for and read the username and the password.
+    public void handle(Callback[] callbacks) {
+	try {
+	    for (int i = 0; i < callbacks.length; i++) {
+		if (callbacks[i] instanceof UsernameCallback) {
+		    UsernameCallback cb = (UsernameCallback) callbacks[i];
+		    /*
+		     * Disable for testing. System.out.print("Username: ");
+		     * String username = readLine();
+		     */
+		    String username = "fred"; // hard-wire for testing
+		    if (username != null)
+			cb.setUsername(username);
+		} else if (callbacks[i] instanceof PasswordCallback) {
+		    PasswordCallback cb = (PasswordCallback) callbacks[i];
+		    /*
+		     * Disable for testing System.out.print("Password: ");
+		     * String password = readLine();
+		     */
+		    String password = "rockbed"; // hard-wire for testing
+		    if (password != null)
+			cb.setPassword(password);
 		}
+	    }
+	} catch (Exception e) {
+	    throw new RuntimeException(e);
 	}
+    }
 }
