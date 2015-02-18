@@ -65,7 +65,7 @@
       <groupId>
 				${project.groupId}
 			</groupId>
-      <artifactId>jaxws-handlers</artifactId>
+      <artifactId>jax-ws-handlers</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

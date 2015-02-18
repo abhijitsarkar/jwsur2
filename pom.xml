@@ -219,7 +219,7 @@
 		<module>jwsur2-ch2</module>
 		<module>jwsur2-ch3</module>
 		<module>jwsur2-ch4</module>
-		<module>jaxws-handlers</module>
+		<module>jax-ws-handlers</module>
 		<module>jwsur2-ch5</module>
 		<module>jwsur2-ch6</module>
 	</modules>
