@@ -6,7 +6,7 @@
 		<artifactId>jwsur2</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>jaxws-handlers</artifactId>
+	<artifactId>jax-ws-handlers</artifactId>
 
 	<dependencies>
 		<dependency>
