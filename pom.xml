@@ -145,20 +145,20 @@
 						WEB-INF/*/jaxws-bindings/**</packagingExcludes>
 				</configuration>
 			</plugin>
+      <plugin>
+          <groupId>org.jvnet.jax-ws-commons</groupId>
+          <artifactId>jaxws-maven-plugin</artifactId>
+          <version>2.3</version>
+          <configuration>
+            <executable>${wsimport.exec}</executable>
+            <sourceDestDir>${project.build.sourceDirectory}</sourceDestDir>
+            <verbose>true</verbose>
+            <target>2.2</target>
+          </configuration>
+        </plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>
-				<plugin>
-					<groupId>org.jvnet.jax-ws-commons</groupId>
-					<artifactId>jaxws-maven-plugin</artifactId>
-					<version>2.3</version>
-					<configuration>
-						<executable>${wsimport.exec}</executable>
-						<sourceDestDir>${project.build.sourceDirectory}</sourceDestDir>
-						<verbose>true</verbose>
-						<target>2.2</target>
-					</configuration>
-				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.2</version>
@@ -210,10 +210,35 @@
 						<contextPath>/${project.artifactId}</contextPath>
 					</configuration>
 				</plugin>
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<plugin>
+				  <groupId>org.eclipse.m2e</groupId>
+				  <artifactId>lifecycle-mapping</artifactId>
+				  <version>1.0.0</version>
+				  <configuration>
+				    <lifecycleMappingMetadata>
+				      <pluginExecutions>
+				        <pluginExecution>
+				          <pluginExecutionFilter>
+				            <groupId>org.jvnet.jax-ws-commons</groupId>
+				            <artifactId>jaxws-maven-plugin</artifactId>
+				            <versionRange>[2.3,)</versionRange>
+				            <goals>
+				              <goal>wsimport</goal>
+				            </goals>
+				          </pluginExecutionFilter>
+				          <action>
+				            <ignore></ignore>
+				          </action>
+				        </pluginExecution>
+				      </pluginExecutions>
+				    </lifecycleMappingMetadata>
+				  </configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
-
+  
 	<modules>
 		<module>jwsur2-ch1</module>
 		<module>jwsur2-ch2</module>

@@ -1,16 +1,15 @@
+
 package com.github.mkalin.jwsur2.ch6.wssecurity.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for echo complex type.
+ * <p>Java class for echo complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="echo">
@@ -27,7 +26,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "echo", propOrder = { "arg0" })
+@XmlType(name = "echo", propOrder = {
+    "arg0"
+})
 public class Echo_Type {
 
     protected String arg0;
@@ -35,22 +36,25 @@ public class Echo_Type {
     /**
      * Gets the value of the arg0 property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getArg0() {
-	return arg0;
+        return arg0;
     }
 
     /**
      * Sets the value of the arg0 property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setArg0(String value) {
-	this.arg0 = value;
+        this.arg0 = value;
     }
 
 }

@@ -1,16 +1,15 @@
+
 package com.github.mkalin.jwsur2.ch5.predictions.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for VerbosityException complex type.
+ * <p>Java class for VerbosityException complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="VerbosityException">
@@ -28,7 +27,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VerbosityException", propOrder = { "faultInfo", "message" })
+@XmlType(name = "VerbosityException", propOrder = {
+    "faultInfo",
+    "message"
+})
 public class VerbosityException {
 
     protected String faultInfo;
@@ -37,43 +39,49 @@ public class VerbosityException {
     /**
      * Gets the value of the faultInfo property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFaultInfo() {
-	return faultInfo;
+        return faultInfo;
     }
 
     /**
      * Sets the value of the faultInfo property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFaultInfo(String value) {
-	this.faultInfo = value;
+        this.faultInfo = value;
     }
 
     /**
      * Gets the value of the message property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMessage() {
-	return message;
+        return message;
     }
 
     /**
      * Sets the value of the message property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMessage(String value) {
-	this.message = value;
+        this.message = value;
     }
 
 }

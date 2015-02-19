@@ -1,3 +1,4 @@
+
 package com.github.mkalin.jwsur2.ch5.predictions.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for createResponse complex type.
+ * <p>Java class for createResponse complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="createResponse">
@@ -28,7 +27,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "createResponse", propOrder = { "_return" })
+@XmlType(name = "createResponse", propOrder = {
+    "_return"
+})
 public class CreateResponse {
 
     @XmlElement(name = "return")
@@ -37,22 +38,25 @@ public class CreateResponse {
     /**
      * Gets the value of the return property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getReturn() {
-	return _return;
+        return _return;
     }
 
     /**
      * Sets the value of the return property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setReturn(String value) {
-	this._return = value;
+        this._return = value;
     }
 
 }

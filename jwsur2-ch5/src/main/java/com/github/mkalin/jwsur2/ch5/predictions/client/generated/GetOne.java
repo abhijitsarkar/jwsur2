@@ -1,16 +1,15 @@
+
 package com.github.mkalin.jwsur2.ch5.predictions.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for getOne complex type.
+ * <p>Java class for getOne complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="getOne">
@@ -27,7 +26,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getOne", propOrder = { "arg0" })
+@XmlType(name = "getOne", propOrder = {
+    "arg0"
+})
 public class GetOne {
 
     protected int arg0;
@@ -37,7 +38,7 @@ public class GetOne {
      * 
      */
     public int getArg0() {
-	return arg0;
+        return arg0;
     }
 
     /**
@@ -45,7 +46,7 @@ public class GetOne {
      * 
      */
     public void setArg0(int value) {
-	this.arg0 = value;
+        this.arg0 = value;
     }
 
 }

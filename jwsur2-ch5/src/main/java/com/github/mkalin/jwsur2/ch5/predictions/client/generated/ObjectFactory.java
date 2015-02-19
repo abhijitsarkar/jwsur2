@@ -1,3 +1,4 @@
+
 package com.github.mkalin.jwsur2.ch5.predictions.client.generated;
 
 import javax.xml.bind.JAXBElement;
@@ -5,53 +6,38 @@ import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 
+
 /**
- * This object contains factory methods for each Java content interface and Java
- * element interface generated in the
- * com.github.mkalin.jwsur2.ch5.predictions.client.generated package.
- * <p>
- * An ObjectFactory allows you to programatically construct new instances of the
- * Java representation for XML content. The Java representation of XML content
- * can consist of schema derived interfaces and classes representing the binding
- * of schema type definitions, element declarations and model groups. Factory
- * methods for each of these are provided in this class.
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.github.mkalin.jwsur2.ch5.predictions.client.generated package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
  * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Delete_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/", "delete");
-    private final static QName _GetOneResponse_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/",
-	    "getOneResponse");
-    private final static QName _GetOne_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/", "getOne");
-    private final static QName _Create_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/", "create");
-    private final static QName _CreateResponse_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/",
-	    "createResponse");
-    private final static QName _EditResponse_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/", "editResponse");
-    private final static QName _DeleteResponse_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/",
-	    "deleteResponse");
-    private final static QName _Edit_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/", "edit");
-    private final static QName _GetAllResponse_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/",
-	    "getAllResponse");
-    private final static QName _VerbosityException_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/",
-	    "VerbosityException");
-    private final static QName _GetAll_QNAME = new QName(
-	    "http://predictions.ch5.jwsur2.mkalin.github.com/", "getAll");
+    private final static QName _Delete_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "delete");
+    private final static QName _GetOneResponse_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "getOneResponse");
+    private final static QName _GetOne_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "getOne");
+    private final static QName _Create_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "create");
+    private final static QName _CreateResponse_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "createResponse");
+    private final static QName _EditResponse_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "editResponse");
+    private final static QName _DeleteResponse_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "deleteResponse");
+    private final static QName _Edit_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "edit");
+    private final static QName _GetAllResponse_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "getAllResponse");
+    private final static QName _VerbosityException_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "VerbosityException");
+    private final static QName _GetAll_QNAME = new QName("http://predictions.ch5.jwsur2.mkalin.github.com/", "getAll");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of
-     * schema derived classes for package:
-     * com.github.mkalin.jwsur2.ch5.predictions.client.generated
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.github.mkalin.jwsur2.ch5.predictions.client.generated
      * 
      */
     public ObjectFactory() {
@@ -62,7 +48,7 @@ public class ObjectFactory {
      * 
      */
     public VerbosityException createVerbosityException() {
-	return new VerbosityException();
+        return new VerbosityException();
     }
 
     /**
@@ -70,7 +56,7 @@ public class ObjectFactory {
      * 
      */
     public GetAll createGetAll() {
-	return new GetAll();
+        return new GetAll();
     }
 
     /**
@@ -78,7 +64,7 @@ public class ObjectFactory {
      * 
      */
     public EditResponse createEditResponse() {
-	return new EditResponse();
+        return new EditResponse();
     }
 
     /**
@@ -86,7 +72,7 @@ public class ObjectFactory {
      * 
      */
     public DeleteResponse createDeleteResponse() {
-	return new DeleteResponse();
+        return new DeleteResponse();
     }
 
     /**
@@ -94,7 +80,7 @@ public class ObjectFactory {
      * 
      */
     public Edit createEdit() {
-	return new Edit();
+        return new Edit();
     }
 
     /**
@@ -102,7 +88,7 @@ public class ObjectFactory {
      * 
      */
     public GetAllResponse createGetAllResponse() {
-	return new GetAllResponse();
+        return new GetAllResponse();
     }
 
     /**
@@ -110,7 +96,7 @@ public class ObjectFactory {
      * 
      */
     public GetOne createGetOne() {
-	return new GetOne();
+        return new GetOne();
     }
 
     /**
@@ -118,7 +104,7 @@ public class ObjectFactory {
      * 
      */
     public Create createCreate() {
-	return new Create();
+        return new Create();
     }
 
     /**
@@ -126,7 +112,7 @@ public class ObjectFactory {
      * 
      */
     public CreateResponse createCreateResponse() {
-	return new CreateResponse();
+        return new CreateResponse();
     }
 
     /**
@@ -134,7 +120,7 @@ public class ObjectFactory {
      * 
      */
     public Delete createDelete() {
-	return new Delete();
+        return new Delete();
     }
 
     /**
@@ -142,7 +128,7 @@ public class ObjectFactory {
      * 
      */
     public GetOneResponse createGetOneResponse() {
-	return new GetOneResponse();
+        return new GetOneResponse();
     }
 
     /**
@@ -150,119 +136,106 @@ public class ObjectFactory {
      * 
      */
     public Prediction createPrediction() {
-	return new Prediction();
+        return new Prediction();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Delete }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Delete }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "delete")
     public JAXBElement<Delete> createDelete(Delete value) {
-	return new JAXBElement<Delete>(_Delete_QNAME, Delete.class, null, value);
+        return new JAXBElement<Delete>(_Delete_QNAME, Delete.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetOneResponse }
-     * {@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetOneResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "getOneResponse")
     public JAXBElement<GetOneResponse> createGetOneResponse(GetOneResponse value) {
-	return new JAXBElement<GetOneResponse>(_GetOneResponse_QNAME,
-		GetOneResponse.class, null, value);
+        return new JAXBElement<GetOneResponse>(_GetOneResponse_QNAME, GetOneResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetOne }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetOne }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "getOne")
     public JAXBElement<GetOne> createGetOne(GetOne value) {
-	return new JAXBElement<GetOne>(_GetOne_QNAME, GetOne.class, null, value);
+        return new JAXBElement<GetOne>(_GetOne_QNAME, GetOne.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Create }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Create }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "create")
     public JAXBElement<Create> createCreate(Create value) {
-	return new JAXBElement<Create>(_Create_QNAME, Create.class, null, value);
+        return new JAXBElement<Create>(_Create_QNAME, Create.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateResponse }
-     * {@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "createResponse")
     public JAXBElement<CreateResponse> createCreateResponse(CreateResponse value) {
-	return new JAXBElement<CreateResponse>(_CreateResponse_QNAME,
-		CreateResponse.class, null, value);
+        return new JAXBElement<CreateResponse>(_CreateResponse_QNAME, CreateResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EditResponse }
-     * {@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EditResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "editResponse")
     public JAXBElement<EditResponse> createEditResponse(EditResponse value) {
-	return new JAXBElement<EditResponse>(_EditResponse_QNAME,
-		EditResponse.class, null, value);
+        return new JAXBElement<EditResponse>(_EditResponse_QNAME, EditResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteResponse }
-     * {@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "deleteResponse")
     public JAXBElement<DeleteResponse> createDeleteResponse(DeleteResponse value) {
-	return new JAXBElement<DeleteResponse>(_DeleteResponse_QNAME,
-		DeleteResponse.class, null, value);
+        return new JAXBElement<DeleteResponse>(_DeleteResponse_QNAME, DeleteResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Edit }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Edit }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "edit")
     public JAXBElement<Edit> createEdit(Edit value) {
-	return new JAXBElement<Edit>(_Edit_QNAME, Edit.class, null, value);
+        return new JAXBElement<Edit>(_Edit_QNAME, Edit.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllResponse }
-     * {@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "getAllResponse")
     public JAXBElement<GetAllResponse> createGetAllResponse(GetAllResponse value) {
-	return new JAXBElement<GetAllResponse>(_GetAllResponse_QNAME,
-		GetAllResponse.class, null, value);
+        return new JAXBElement<GetAllResponse>(_GetAllResponse_QNAME, GetAllResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}
-     * {@link VerbosityException }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link VerbosityException }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "VerbosityException")
-    public JAXBElement<VerbosityException> createVerbosityException(
-	    VerbosityException value) {
-	return new JAXBElement<VerbosityException>(_VerbosityException_QNAME,
-		VerbosityException.class, null, value);
+    public JAXBElement<VerbosityException> createVerbosityException(VerbosityException value) {
+        return new JAXBElement<VerbosityException>(_VerbosityException_QNAME, VerbosityException.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetAll }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAll }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://predictions.ch5.jwsur2.mkalin.github.com/", name = "getAll")
     public JAXBElement<GetAll> createGetAll(GetAll value) {
-	return new JAXBElement<GetAll>(_GetAll_QNAME, GetAll.class, null, value);
+        return new JAXBElement<GetAll>(_GetAll_QNAME, GetAll.class, null, value);
     }
 
 }

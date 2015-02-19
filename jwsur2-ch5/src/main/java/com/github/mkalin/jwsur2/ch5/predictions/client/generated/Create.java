@@ -1,16 +1,15 @@
+
 package com.github.mkalin.jwsur2.ch5.predictions.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for create complex type.
+ * <p>Java class for create complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="create">
@@ -28,7 +27,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "create", propOrder = { "arg0", "arg1" })
+@XmlType(name = "create", propOrder = {
+    "arg0",
+    "arg1"
+})
 public class Create {
 
     protected String arg0;
@@ -37,43 +39,49 @@ public class Create {
     /**
      * Gets the value of the arg0 property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getArg0() {
-	return arg0;
+        return arg0;
     }
 
     /**
      * Sets the value of the arg0 property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setArg0(String value) {
-	this.arg0 = value;
+        this.arg0 = value;
     }
 
     /**
      * Gets the value of the arg1 property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getArg1() {
-	return arg1;
+        return arg1;
     }
 
     /**
      * Sets the value of the arg1 property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setArg1(String value) {
-	this.arg1 = value;
+        this.arg1 = value;
     }
 
 }

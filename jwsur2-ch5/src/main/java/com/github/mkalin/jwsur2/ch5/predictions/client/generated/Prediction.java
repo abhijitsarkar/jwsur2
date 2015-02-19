@@ -1,16 +1,15 @@
+
 package com.github.mkalin.jwsur2.ch5.predictions.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for prediction complex type.
+ * <p>Java class for prediction complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="prediction">
@@ -29,7 +28,11 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "prediction", propOrder = { "id", "what", "who" })
+@XmlType(name = "prediction", propOrder = {
+    "id",
+    "what",
+    "who"
+})
 public class Prediction {
 
     protected int id;
@@ -41,7 +44,7 @@ public class Prediction {
      * 
      */
     public int getId() {
-	return id;
+        return id;
     }
 
     /**
@@ -49,49 +52,55 @@ public class Prediction {
      * 
      */
     public void setId(int value) {
-	this.id = value;
+        this.id = value;
     }
 
     /**
      * Gets the value of the what property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getWhat() {
-	return what;
+        return what;
     }
 
     /**
      * Sets the value of the what property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWhat(String value) {
-	this.what = value;
+        this.what = value;
     }
 
     /**
      * Gets the value of the who property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getWho() {
-	return who;
+        return who;
     }
 
     /**
      * Sets the value of the who property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setWho(String value) {
-	this.who = value;
+        this.who = value;
     }
 
 }

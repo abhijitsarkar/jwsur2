@@ -1,20 +1,18 @@
+
 package com.github.mkalin.jwsur2.ch5.predictions.client.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for getAllResponse complex type.
+ * <p>Java class for getAllResponse complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="getAllResponse">
@@ -31,7 +29,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getAllResponse", propOrder = { "_return" })
+@XmlType(name = "getAllResponse", propOrder = {
+    "_return"
+})
 public class GetAllResponse {
 
     @XmlElement(name = "return")
@@ -41,16 +41,15 @@ public class GetAllResponse {
      * Gets the value of the return property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the return property.
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the return property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
-     * getReturn().add(newItem);
+     *    getReturn().add(newItem);
      * </pre>
      * 
      * 
@@ -61,10 +60,10 @@ public class GetAllResponse {
      * 
      */
     public List<Prediction> getReturn() {
-	if (_return == null) {
-	    _return = new ArrayList<Prediction>();
-	}
-	return this._return;
+        if (_return == null) {
+            _return = new ArrayList<Prediction>();
+        }
+        return this._return;
     }
 
 }

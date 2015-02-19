@@ -13,7 +13,6 @@
     Original code can be found here: https://github.com/mkalin/jwsur2
     
     <![CDATA[
-      To generate JAX-WS clients, navigate to 'jwsur-ch6', run 'mvn clean generate-sources -P wsimport'
       To run, navigate to 'jwsur-c6', run 'mvn clean package jetty:run'. Then run the main classes in the project.
       
       To start Jetty in debug mode, run 'mvn clean package jetty:run-forked'.
@@ -54,6 +53,60 @@
           </loginServices>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.jvnet.jax-ws-commons</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>wsimport-tempconvert-client</id>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+            <phase>generate-sources</phase>
+            <configuration>
+              <bindingDirectory>src/main/resources</bindingDirectory>
+              <bindingFiles>
+                <bindingFile>jaxws-handler-chains-tc.xml</bindingFile>
+              </bindingFiles>
+              <!-- It turns out that the generated handler file is placed deep in 
+                the output dir; this puts that in the resources directory -->
+              <destDir>src/main/resources</destDir>
+              <packageName>com.github.mkalin.jwsur2.ch6.tempconvert.client.generated</packageName>
+              <!-- Use a local WSDL because the actual one is protected -->
+              <wsdlDirectory>src/main/resources</wsdlDirectory>
+              <wsdlFiles>
+                <wsdlFile>tempconvert.wsdl</wsdlFile>
+              </wsdlFiles>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <xnocompile>true</xnocompile>
+            </configuration>
+          </execution>
+          <execution>
+            <id>wsimport-echo-client</id>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+            <phase>generate-sources</phase>
+            <configuration>
+              <bindingDirectory>src/main/resources</bindingDirectory>
+              <bindingFiles>
+                <bindingFile>jaxws-handler-chains-echo-client.xml</bindingFile>
+              </bindingFiles>
+              <!-- It turns out that the generated handler file is placed deep in 
+                the output dir; this puts that in the resources directory -->
+              <destDir>src/main/resources</destDir>
+              <packageName>com.github.mkalin.jwsur2.ch6.wssecurity.client.generated</packageName>
+              <!-- Use a local WSDL because the actual one is protected -->
+              <wsdlDirectory>src/main/resources/com/github/mkalin/jwsur2/ch6/wssecurity</wsdlDirectory>
+              <wsdlFiles>
+                <wsdlFile>echo.wsdl</wsdlFile>
+              </wsdlFiles>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <xnocompile>true</xnocompile>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
   <dependencies>
@@ -84,68 +137,4 @@
     </dependency>
   </dependencies>
 
-  <profiles>
-    <profile>
-      <id>wsimport</id>
-      <build>
-        <defaultGoal>clean generate-sources</defaultGoal>
-        <plugins>
-          <plugin>
-            <groupId>org.jvnet.jax-ws-commons</groupId>
-            <artifactId>jaxws-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>wsimport-tempconvert-client</id>
-                <goals>
-                  <goal>wsimport</goal>
-                </goals>
-                <phase>generate-sources</phase>
-                <configuration>
-                  <bindingDirectory>src/main/resources</bindingDirectory>
-                  <bindingFiles>
-                    <bindingFile>jaxws-handler-chains-tc.xml</bindingFile>
-                  </bindingFiles>
-                  <!-- It turns out that the generated handler file is placed deep 
-                    in the output dir; this puts that in the resources directory -->
-                  <destDir>src/main/resources</destDir>
-                  <packageName>com.github.mkalin.jwsur2.ch6.tempconvert.client.generated</packageName>
-                  <!-- Use a local WSDL because the actual one is protected -->
-                  <wsdlDirectory>src/main/resources</wsdlDirectory>
-                  <wsdlFiles>
-                    <wsdlFile>tempconvert.wsdl</wsdlFile>
-                  </wsdlFiles>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <xnocompile>true</xnocompile>
-                </configuration>
-              </execution>
-              <execution>
-                <id>wsimport-echo-client</id>
-                <goals>
-                  <goal>wsimport</goal>
-                </goals>
-                <phase>generate-sources</phase>
-                <configuration>
-                  <bindingDirectory>src/main/resources</bindingDirectory>
-                  <bindingFiles>
-                    <bindingFile>jaxws-handler-chains-echo-client.xml</bindingFile>
-                  </bindingFiles>
-                  <!-- It turns out that the generated handler file is placed deep 
-                    in the output dir; this puts that in the resources directory -->
-                  <destDir>src/main/resources</destDir>
-                  <packageName>com.github.mkalin.jwsur2.ch6.wssecurity.client.generated</packageName>
-                  <!-- Use a local WSDL because the actual one is protected -->
-                  <wsdlDirectory>src/main/resources/com/github/mkalin/jwsur2/ch6/wssecurity</wsdlDirectory>
-                  <wsdlFiles>
-                    <wsdlFile>echo.wsdl</wsdlFile>
-                  </wsdlFiles>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <xnocompile>true</xnocompile>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 </project>

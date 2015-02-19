@@ -1,3 +1,4 @@
+
 package com.github.mkalin.jwsur2.ch5.predictions.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for getOneResponse complex type.
+ * <p>Java class for getOneResponse complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="getOneResponse">
@@ -28,7 +27,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getOneResponse", propOrder = { "_return" })
+@XmlType(name = "getOneResponse", propOrder = {
+    "_return"
+})
 public class GetOneResponse {
 
     @XmlElement(name = "return")
@@ -37,22 +38,25 @@ public class GetOneResponse {
     /**
      * Gets the value of the return property.
      * 
-     * @return possible object is {@link Prediction }
-     * 
+     * @return
+     *     possible object is
+     *     {@link Prediction }
+     *     
      */
     public Prediction getReturn() {
-	return _return;
+        return _return;
     }
 
     /**
      * Sets the value of the return property.
      * 
      * @param value
-     *            allowed object is {@link Prediction }
-     * 
+     *     allowed object is
+     *     {@link Prediction }
+     *     
      */
     public void setReturn(Prediction value) {
-	this._return = value;
+        this._return = value;
     }
 
 }

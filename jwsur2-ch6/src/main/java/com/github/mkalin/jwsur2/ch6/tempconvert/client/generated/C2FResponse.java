@@ -1,3 +1,4 @@
+
 package com.github.mkalin.jwsur2.ch6.tempconvert.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for c2fResponse complex type.
+ * <p>Java class for c2fResponse complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="c2fResponse">
@@ -28,7 +27,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "c2fResponse", propOrder = { "_return" })
+@XmlType(name = "c2fResponse", propOrder = {
+    "_return"
+})
 public class C2FResponse {
 
     @XmlElement(name = "return")
@@ -39,7 +40,7 @@ public class C2FResponse {
      * 
      */
     public float getReturn() {
-	return _return;
+        return _return;
     }
 
     /**
@@ -47,7 +48,7 @@ public class C2FResponse {
      * 
      */
     public void setReturn(float value) {
-	this._return = value;
+        this._return = value;
     }
 
 }

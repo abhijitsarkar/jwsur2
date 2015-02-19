@@ -1,16 +1,15 @@
+
 package com.github.mkalin.jwsur2.ch6.tempconvert.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for f2c complex type.
+ * <p>Java class for f2c complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="f2c">
@@ -27,7 +26,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "f2c", propOrder = { "arg0" })
+@XmlType(name = "f2c", propOrder = {
+    "arg0"
+})
 public class F2C {
 
     protected float arg0;
@@ -37,7 +38,7 @@ public class F2C {
      * 
      */
     public float getArg0() {
-	return arg0;
+        return arg0;
     }
 
     /**
@@ -45,7 +46,7 @@ public class F2C {
      * 
      */
     public void setArg0(float value) {
-	this.arg0 = value;
+        this.arg0 = value;
     }
 
 }

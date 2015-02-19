@@ -13,7 +13,6 @@
     Original code can be found here: https://github.com/mkalin/jwsur2
      
 	  <![CDATA[
-	    To generate JAX-WS clients, navigate to 'jwsur-ch4', run 'mvn clean generate-sources -P wsimport'
       To run, navigate to 'jwsur-ch4', run 'mvn clean package jetty:run'. Then run the main classes in the project.
     	
       To start Jetty in debug mode, run 'mvn clean package jetty:run-forked'.
@@ -39,77 +38,71 @@
     </dependency>
   </dependencies>
 
-  <profiles>
-    <profile>
-      <id>wsimport</id>
-      <build>
-        <defaultGoal>clean generate-sources</defaultGoal>
-        <plugins>
-          <plugin>
-            <groupId>org.jvnet.jax-ws-commons</groupId>
-            <artifactId>jaxws-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>wsimport-rand-client</id>
-                <goals>
-                  <goal>wsimport</goal>
-                </goals>
-                <phase>generate-sources</phase>
-                <configuration>
-                  <bindingDirectory>src/main/resources/jaxws-bindings</bindingDirectory>
-                  <bindingFiles>
-                    <bindingFile>jaxws-handler-chains.xml</bindingFile>
-                  </bindingFiles>
-                  <!-- It turns out that the generated handler file is placed deep 
-                    in the output dir; this puts that in the resources directory -->
-                  <destDir>src/main/resources</destDir>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <packageName>com.github.mkalin.jwsur2.ch4.rand.client.generated</packageName>
-                  <staleFile>${project.build.directory}/jaxws/wsimport1/stale</staleFile>
-                  <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
-                  <wsdlLocation>http://localhost:8080/jwsur2-ch4/rand?wsdl</wsdlLocation>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <xnocompile>true</xnocompile>
-                  <wsdlFiles>
-                    <wsdlFile>rand.wsdl</wsdlFile>
-                  </wsdlFiles>
-                </configuration>
-              </execution>
-              <execution>
-                <id>wsimport-rand-client-async</id>
-                <goals>
-                  <goal>wsimport</goal>
-                </goals>
-                <phase>generate-sources</phase>
-                <configuration>
-                  <bindingDirectory>src/main/resources</bindingDirectory>
-                  <bindingFiles>
-                    <bindingFile>jaxws-bindings/jaxws-handler-chains.xml</bindingFile>
-                    <!-- This is necessary to enable generation of async methods -->
-                    <bindingFile>jaxws-bindings/jaxws-async-mapping.xml</bindingFile>
-                    <!-- The auto-generated class NextNResponse comes with a java.util.List 
-                      property which JAXB can't handle by default. -->
-                    <bindingFile>jaxb-bindings/jaxb-class-binding.xml</bindingFile>
-                  </bindingFiles>
-                  <!-- It turns out that the generated handler file is placed deep 
-                    in the output dir; this puts that in the resources directory -->
-                  <destDir>src/main/resources</destDir>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <packageName>com.github.mkalin.jwsur2.ch4.rand.client.async.generated</packageName>
-                  <staleFile>${project.build.directory}/jaxws/wsimport2/stale</staleFile>
-                  <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
-                  <wsdlLocation>http://localhost:8080/jwsur2-ch4/rand?wsdl</wsdlLocation>
-                  <!-- Turn off generated source compilation; Maven will do it anyway -->
-                  <xnocompile>true</xnocompile>
-                  <wsdlFiles>
-                    <wsdlFile>rand.wsdl</wsdlFile>
-                  </wsdlFiles>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jvnet.jax-ws-commons</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>wsimport-rand-client</id>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+            <phase>generate-sources</phase>
+            <configuration>
+              <bindingDirectory>src/main/resources/jaxws-bindings</bindingDirectory>
+              <bindingFiles>
+                <bindingFile>jaxws-handler-chains.xml</bindingFile>
+              </bindingFiles>
+              <!-- It turns out that the generated handler file is placed deep in 
+                the output dir; this puts that in the resources directory -->
+              <destDir>src/main/resources</destDir>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <packageName>com.github.mkalin.jwsur2.ch4.rand.client.generated</packageName>
+              <staleFile>${project.build.directory}/jaxws/wsimport1/stale</staleFile>
+              <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
+              <wsdlLocation>http://localhost:8080/jwsur2-ch4/rand?wsdl</wsdlLocation>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <xnocompile>true</xnocompile>
+              <wsdlFiles>
+                <wsdlFile>rand.wsdl</wsdlFile>
+              </wsdlFiles>
+            </configuration>
+          </execution>
+          <execution>
+            <id>wsimport-rand-client-async</id>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+            <phase>generate-sources</phase>
+            <configuration>
+              <bindingDirectory>src/main/resources</bindingDirectory>
+              <bindingFiles>
+                <bindingFile>jaxws-bindings/jaxws-handler-chains.xml</bindingFile>
+                <!-- This is necessary to enable generation of async methods -->
+                <bindingFile>jaxws-bindings/jaxws-async-mapping.xml</bindingFile>
+                <!-- The auto-generated class NextNResponse comes with a java.util.List 
+                  property which JAXB can't handle by default. -->
+                <bindingFile>jaxb-bindings/jaxb-class-binding.xml</bindingFile>
+              </bindingFiles>
+              <!-- It turns out that the generated handler file is placed deep in 
+                the output dir; this puts that in the resources directory -->
+              <destDir>src/main/resources</destDir>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <packageName>com.github.mkalin.jwsur2.ch4.rand.client.async.generated</packageName>
+              <staleFile>${project.build.directory}/jaxws/wsimport2/stale</staleFile>
+              <wsdlDirectory>src/main/resources/wsdl</wsdlDirectory>
+              <wsdlLocation>http://localhost:8080/jwsur2-ch4/rand?wsdl</wsdlLocation>
+              <!-- Turn off generated source compilation; Maven will do it anyway -->
+              <xnocompile>true</xnocompile>
+              <wsdlFiles>
+                <wsdlFile>rand.wsdl</wsdlFile>
+              </wsdlFiles>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>

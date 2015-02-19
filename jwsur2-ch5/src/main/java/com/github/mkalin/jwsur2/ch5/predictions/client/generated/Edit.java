@@ -1,16 +1,15 @@
+
 package com.github.mkalin.jwsur2.ch5.predictions.client.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for edit complex type.
+ * <p>Java class for edit complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="edit">
@@ -29,7 +28,11 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "edit", propOrder = { "arg0", "arg1", "arg2" })
+@XmlType(name = "edit", propOrder = {
+    "arg0",
+    "arg1",
+    "arg2"
+})
 public class Edit {
 
     protected int arg0;
@@ -41,7 +44,7 @@ public class Edit {
      * 
      */
     public int getArg0() {
-	return arg0;
+        return arg0;
     }
 
     /**
@@ -49,49 +52,55 @@ public class Edit {
      * 
      */
     public void setArg0(int value) {
-	this.arg0 = value;
+        this.arg0 = value;
     }
 
     /**
      * Gets the value of the arg1 property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getArg1() {
-	return arg1;
+        return arg1;
     }
 
     /**
      * Sets the value of the arg1 property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setArg1(String value) {
-	this.arg1 = value;
+        this.arg1 = value;
     }
 
     /**
      * Gets the value of the arg2 property.
      * 
-     * @return possible object is {@link String }
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getArg2() {
-	return arg2;
+        return arg2;
     }
 
     /**
      * Sets the value of the arg2 property.
      * 
      * @param value
-     *            allowed object is {@link String }
-     * 
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setArg2(String value) {
-	this.arg2 = value;
+        this.arg2 = value;
     }
 
 }
